@@ -1,19 +1,32 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <div class="max-w-screen-lg mx-auto text-align-left">
+      <h1 class="text-white text-left text-2xl font-bold my-6">
+        Zobacz nasze filmy
+      </h1>
+     <!-- <MoviesWithLoader /> -->
+     <!-- <MoviesWithError /> -->
+     <!-- <MoviesWithNoData /> -->
+     <MoviesWithTimeout />
+    </div>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+// import MoviesWithLoader from "./components/MoviesWithLoader";
+// import MoviesWithError from "./components/MoviesWithError";
+// import MoviesWithNoData from "./components/MoviesWithNoData";
+import MoviesWithTimeout from "./components/MoviesWithTimeout";
 
 export default {
-  name: 'App',
+  name: "App",
   components: {
-    HelloWorld
-  }
-}
+    // MoviesWithLoader,
+    // MoviesWithError,
+    // MoviesWithNoData,
+    MoviesWithTimeout
+  },
+};
 </script>
 
 <style>
@@ -23,6 +36,5 @@ export default {
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
-  margin-top: 60px;
 }
 </style>
