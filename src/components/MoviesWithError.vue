@@ -1,6 +1,6 @@
 <template>
   <div>
-    <ErrorHandler v-if="isError" @tryAgain="fetchMovies()" message="We couldn't fetch movies - please try again in a while."/>
+    <ErrorHandler v-if="isError" @tryAgain="fetchMovies()" message="Nie możemy pobrać danych o filmach - spróbuj za jakiś czas."/>
     <div v-else>
       <Loader v-if="isLoading" class="w-16 mx-auto" />
       <div v-else class="space-y-4">

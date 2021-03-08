@@ -4,27 +4,19 @@
       <h1 class="text-white text-left text-2xl font-bold my-6">
         Zobacz nasze filmy
       </h1>
-     <!-- <MoviesWithLoader /> -->
-     <!-- <MoviesWithError /> -->
-     <!-- <MoviesWithNoData /> -->
-     <MoviesWithTimeout />
+      <MoviesWithLoader />
     </div>
   </div>
 </template>
 
 <script>
-// import MoviesWithLoader from "./components/MoviesWithLoader";
-// import MoviesWithError from "./components/MoviesWithError";
-// import MoviesWithNoData from "./components/MoviesWithNoData";
-import MoviesWithTimeout from "./components/MoviesWithTimeout";
+
+import MoviesWithLoader from './components/MoviesWithLoader'
 
 export default {
   name: "App",
   components: {
-    // MoviesWithLoader,
-    // MoviesWithError,
-    // MoviesWithNoData,
-    MoviesWithTimeout
+    MoviesWithLoader
   },
 };
 </script>
